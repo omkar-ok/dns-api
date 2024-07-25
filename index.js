@@ -19,11 +19,11 @@ app.get("/dns-records/text", async (req, res) => {
       }
 
       // Print the output of the command
-        console.log(`stdout:\n${stdout}`);
-        console.error(`stderr:\n${stderr}`);
+      //   console.log(`stdout:\n${stdout}`);
+      //   console.error(`stderr:\n${stderr}`);
 
       const extractedValues = extractTxtValues(stdout);
-        console.log(extractedValues);
+      //   console.log(extractedValues);
 
       const responsedata = {
         data: extractedValues,
